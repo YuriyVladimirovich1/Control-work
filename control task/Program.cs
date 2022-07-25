@@ -1,13 +1,13 @@
-﻿string[] array1 = new string[4] { "word", "vr", "massala", "69"};
-string[] array2 = new string[array1.Length];
-void ArraysOfStrings(string[] array1, string[] array2)
+﻿string[] inputArray = new string[4] { "word", "vr", "massala", "69"};
+string[] resultArray = new string[inputArray.Length];
+void ArraysOfStrings(string[] inputArray, string[] resultArray)
 {
     int count = 0;
-    for (int i = 0; i < array1.Length; i++)
+    for (int i = 0; i < inputArray.Length; i++)
     {
-      if(array1[i].Length <= 3)
+      if(inputArray[i].Length <= 3)
         {
-        array2[count] = array1[i];
+        resultArray[count] = inputArray[i];
         count++;
         }
     }
@@ -20,5 +20,5 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
-ArraysOfStrings(array1, array2);
-PrintArray(array2);
+ArraysOfStrings(inputArray, resultArray);
+PrintArray(resultArray);
